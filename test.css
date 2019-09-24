@@ -1,0 +1,104 @@
+/* general css */
+body {
+    margin: 0 1.5%;
+}
+.clear {
+    clear: both;
+}
+
+
+
+/* fonts css */
+h1, h2, h3, h4, h5 ,h6, p, a{
+    font-family: Arial, Helvetica, sans-serif;
+}
+aside h4, section h4 {
+    padding: 0 10px;
+}
+
+
+
+/* grid css */
+header, nav, footer {
+    margin: 20px 0;
+}
+nav, aside, footer, #content {
+    background-color: #000;
+    border-radius: 25px;
+}
+#content {
+    float: left;
+    width: 70%;
+    height: 300px;
+}
+aside {
+    float: right;
+    width: 30%;
+}
+footer {
+    padding: 5px 0;
+    margin-bottom: 0;
+}
+.container {
+    height: auto;
+}
+
+
+
+/* nav css */
+nav {
+    overflow: hidden;
+}
+nav a {
+    float: left;
+    color: #fff;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+}
+nav a:hover {
+    background-color: #fff;
+    color: #000;
+    cursor: pointer;
+}
+nav a.active {
+    background-color: #5A5A5A;
+    color: white;
+}
+
+
+
+/* footer css */
+footer .footer__author {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* content css */
+#content h4 {
+    text-align: center;
+    color: #fff;
+}
+#content.sidebar__open {
+    width: 70%;
+}
+
+
+
+/* sidebar css */
+#sidebar h4 {
+    text-align: center;
+    color: #fff;
+}
+
+
+
+/* media queries */
+/* extra small devices (phones, 600px and down) */
+@media only screen and (max-width: 600px) {
+    #content, #sidebar {
+        width: 100%;
+    }
+}
